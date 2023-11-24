@@ -1,0 +1,30 @@
+
+   <!-- Header Section -->
+{% extends "base.html" %}
+ <!-- Main Section -->
+ {% block title %}HOME{% endblock title %}
+ {% block body %}
+ <main class="main">
+    <section class="section banner banner-section">
+       <div class="container banner-column">
+        {% load static %}
+          <img class="banner-image" src="{% static 'images/group.png' %}" alt="banner">
+          <div class="banner-inner">
+             <h1 class="heading-xl">Experience <span class="span-land">event</span> Like Never Before</h1>
+             <p class="paragraph">
+                Experience top-notch events with seamless planning, exquisite details, and premium execution for unforgettable moments.
+             </p>
+             <button class="btn btn-darken btn-inline">
+                Explore Now<i class="bx bx-right-arrow-alt"></i>
+             </button>
+          </div>
+          <div class="banner-links">
+             <a href="#" title=""><i class="fab fa-facebook"></i></a>
+             <a href="#" title=""><i class="fab fa-instagram"></i> </a>
+             <a href="#" title=""> <i class="fab fa-twitter"></i></a>
+             <a href="#" title=""> <i class="fab fa-youtube"></i></a>
+          </div>
+       </div>
+    </section>
+ </main>
+ {% endblock body %}
